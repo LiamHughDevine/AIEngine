@@ -1,0 +1,11 @@
+# environment files
+.venv/
+venv/
+# log files
+logs/*
+# python cache files
+__pycache__/
+# testing files
+test.py
+*.db
+*.bin

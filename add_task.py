@@ -7,7 +7,6 @@ def add_task(task: str, action: str, db_name: str = "context") -> None:
     con = sqlite3.connect(f"{db_name}.db")
     cur = con.cursor()
     data = [task, action]
-    print("TEST")
     cur.execute("INSERT INTO metadata (task, action) VALUES (?, ?)", data)
     con.commit()
 
